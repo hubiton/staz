@@ -1,0 +1,27 @@
+.Navbar {
+  width: 200px;
+  height: 80vh;
+  box-sizing: border-box;
+  background-color: #252222;
+  border-color: #af24ff;
+  border-width: 0.6vh;
+  border-style: solid;
+  float: left;
+  border-top: none;
+}
+.Text {
+  color: #af24ff;
+  font-size: 25px;
+  font-variant: small-caps;
+  margin-top: 32px;
+  margin-left: -22px;
+}
+
+.Text:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+.list {
+  list-style-type: none;
+}
