@@ -1,0 +1,16 @@
+#Header {
+  height: 20vh;
+  box-sizing: border-box;
+  background-color: #252222;
+  background-image: url(unnamed.jpg);
+  border-color: #af24ff;
+  border-width: 0.6vh;
+  border-style: solid;
+}
+.Name {
+  color: #af24ff;
+  font-size: 50px;
+  font-variant: small-caps;
+  text-align: center;
+  /* margin-top:50px; */
+}

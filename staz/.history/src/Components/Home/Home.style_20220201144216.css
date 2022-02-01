@@ -1,0 +1,17 @@
+#Home{
+height: 79.5vh;
+background-color: aqua;
+border-color: #af24ff;
+border-width: 0.6vh;
+border-style: solid;
+border-top:none;
+border-left: none;
+position: static;
+margin-left:10.5%;
+}
+.slider{
+width:600px;
+height: 200px;
+margin-left: 34%;
+padding-top: 12%;
+}
