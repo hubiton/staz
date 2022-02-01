@@ -12,8 +12,9 @@
 .Text {
   color: #af24ff;
   font-size: 25px;
+  text-align: center;
   font-variant: small-caps;
-  margin-top: 32px;
+  margin-top: 2vh;
   margin-left: -22px;
 }
 

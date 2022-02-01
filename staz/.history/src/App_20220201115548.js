@@ -6,12 +6,14 @@ import * as ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
+
 function App() {
  return (
   <BrowserRouter>
-  <app/>
   <Routes>
-    <Route exact path="/buty" element={<Buty />}>
+    <Route path="/" element={<Navbar />}>
+      <Route index element={<App />} />
+      <Route path="blogs" element={<Header />} />
     </Route>
   </Routes>
 </BrowserRouter>
@@ -19,4 +21,3 @@ function App() {
 }
 
 
-export default App

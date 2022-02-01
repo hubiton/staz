@@ -11,7 +11,7 @@ function App() {
   <BrowserRouter>
   <app/>
   <Routes>
-    <Route exact path="/buty" element={<Buty />}>
+    <Route path="/buty" element={<Buty />}>
     </Route>
   </Routes>
 </BrowserRouter>

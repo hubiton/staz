@@ -6,17 +6,15 @@ import * as ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
+export default App
 function App() {
  return (
   <BrowserRouter>
   <app/>
   <Routes>
-    <Route exact path="/buty" element={<Buty />}>
+    <Route path="/buty" element={<Buty />}>
     </Route>
   </Routes>
 </BrowserRouter>
   );
 }
-
-
-export default App

@@ -11,7 +11,9 @@ function App() {
   <BrowserRouter>
   <app/>
   <Routes>
-    <Route exact path="/buty" element={<Buty />}>
+    <Route path="/" element={<Navbar />}>
+      <Route index element={<App />}/>
+      <Route path="blogs" element={<Header />} />
     </Route>
   </Routes>
 </BrowserRouter>
