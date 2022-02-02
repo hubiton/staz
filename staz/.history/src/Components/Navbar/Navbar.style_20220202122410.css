@@ -1,0 +1,30 @@
+.Navbar {
+  width: 201vh;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: #252222;
+  border-color: #af24ff;
+  border-width: 0.6vh;
+  border-style: solid;
+  margin-top: -20px;
+  border-top: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart {
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
+.Home {
+  margin-top: 5px;
+}
+
+li:hover {
+  color: aqua;
+  cursor: pointer;
+}

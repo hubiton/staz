@@ -1,0 +1,39 @@
+.Navbar {
+  height: 50px;
+  box-sizing: border-box;
+  background-color: #252222;
+  border-color: #af24ff;
+  border-width: 0.6vh;
+  border-style: solid;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style-type: none;
+  color: #af24ff;
+  text-transform: uppercase;
+  margin: 0;
+  text-decoration: none;
+}
+
+Link {
+  display: flex;
+  align-items: center;
+}
+
+.cart {
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
+.Home {
+  margin-top: 5px;
+}
+
+li:hover {
+  color: aqua;
+  cursor: pointer;
+}

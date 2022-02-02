@@ -1,0 +1,41 @@
+.Navbar {
+  width: 201vh;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: #252222;
+  border-color: #af24ff;
+  border-width: 0.6vh;
+  border-style: solid;
+  margin-top: -20px;
+  border-top: none;
+}
+.Text {
+  color: #af24ff;
+  font-size: 25px;
+  text-align: center;
+  font-variant: small-caps;
+  margin-top: 2vh;
+  margin-left: -25px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -15px;
+  text-indent: 100px ;
+}
+
+
+
+
+li:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+.list {
+  list-style-type: none;
+  padding-top: 20px;
+}
