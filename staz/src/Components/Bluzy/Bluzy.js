@@ -1,118 +1,118 @@
-import { Button, Grid } from "@mui/material";
+import { Button, Grid } from '@mui/material';
 
 export const Bluzy = () => {
-  var newItem = {
-    Bluza1: {
-      name: "Bluza1",
-      image: "https://i.ibb.co/2dNsPmX/bluza1.webp",
-      price: "74.99",
-    },
-    Bluza2: {
-      name: "Bluza2",
-      image: "https://i.ibb.co/19QFj66/bluza3.webp",
-      price: "74.99",
-    },
-    Bluza3: {
-      name: "Bluza3",
-      image: "https://i.ibb.co/YTQS1D8/bluza2.webp",
-      price: "99.99",
-    },
-  };
+	var newItem = {
+		Bluza1: {
+			name: 'Bluza1',
+			image: 'https://i.ibb.co/2dNsPmX/bluza1.webp',
+			price: '74.99',
+		},
+		Bluza2: {
+			name: 'Bluza2',
+			image: 'https://i.ibb.co/19QFj66/bluza3.webp',
+			price: '74.99',
+		},
+		Bluza3: {
+			name: 'Bluza3',
+			image: 'https://i.ibb.co/YTQS1D8/bluza2.webp',
+			price: '99.99',
+		},
+	};
 
-  const addToCart = () => {
-    var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
-    oldItems.push(newItem);
-    localStorage.setItem("itemArray", JSON.stringify(oldItems));
-  };
+	const addToCart = () => {
+		var oldItems = JSON.parse(localStorage.getItem('itemsArray')) || [];
+		oldItems.push(newItem);
+		localStorage.setItem('itemArray', JSON.stringify(oldItems));
+	};
 
-  return (
-    <div className="Bluzy">
-      <Grid
-        container
-        style={{
-          display: "flex",
-          justifyContent: "space-evenly",
-          backgroundImage: "url(https://wallpaperaccess.com/full/1209710.jpg)",
-          height: "73.5vh",
-        }}
-      >
-        <Grid
-          item
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginTop: 75,
-            backgroundColor: "#cfd0d1",
-            boxShadow: " 4px 3px 3px 8px rgba(19, 19, 19, 1)",
-            borderRadius: "25px",
-            width: "15%",
-            height: "65%",
-          }}
-        >
-          <img src={newItem.Bluza1.image} width="250px" height="250px" />
-          <h3>{newItem.Bluza1.name}</h3>
-          <h3>Cena: {newItem.Bluza1.price} zł</h3>
-          <Button
-            variant="outlined"
-            onClick={addToCart}
-            style={{ borderColor: "#af24ff", color: "#af24ff" }}
-          >
-            Dodaj do Koszyka
-          </Button>
-        </Grid>
+	return (
+		<div className="Bluzy">
+			<Grid
+				container
+				style={{
+					display: 'flex',
+					justifyContent: 'space-evenly',
+					backgroundImage: 'url(https://wallpaperaccess.com/full/1209710.jpg)',
+					height: '73.5vh',
+				}}
+			>
+				<Grid
+					item
+					style={{
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center',
+						marginTop: 75,
+						backgroundColor: '#cfd0d1',
+						boxShadow: ' 4px 3px 3px 8px rgba(19, 19, 19, 1)',
+						borderRadius: '25px',
+						height: 'fit-content',
+						padding: '15px',
+					}}
+				>
+					<img src={newItem.Bluza1.image} width="250px" height="250px" />
+					<h3>{newItem.Bluza1.name}</h3>
+					<h3>Cena: {newItem.Bluza1.price} zł</h3>
+					<Button
+						variant="outlined"
+						onClick={addToCart}
+						style={{ borderColor: '#af24ff', color: '#af24ff' }}
+					>
+						Dodaj do Koszyka
+					</Button>
+				</Grid>
 
-        <Grid
-          item
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginTop: 75,
-            backgroundColor: "#cfd0d1",
-            boxShadow: " 4px 3px 3px 8px rgba(19, 19, 19, 1)",
-            borderRadius: "25px",
-            width: "15%",
-            height: "65%",
-          }}
-        >
-          <img src={newItem.Bluza2.image} width="250px" height="250px" />
-          <h3>{newItem.Bluza2.name}</h3>
-          <h3>Cena: {newItem.Bluza2.price} zł</h3>
-          <Button
-            variant="outlined"
-            onClick={addToCart}
-            style={{ borderColor: "#af24ff", color: "#af24ff" }}
-          >
-            Dodaj do Koszyka
-          </Button>
-        </Grid>
-        <Grid
-          item
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginTop: 75,
-            backgroundColor: "#cfd0d1",
-            boxShadow: " 4px 3px 3px 8px rgba(19, 19, 19, 1)",
-            borderRadius: "25px",
-            width: "15%",
-            height: "65%",
-          }}
-        >
-          <img src={newItem.Bluza3.image} width="250px" height="250px" />
-          <h3>{newItem.Bluza3.name}</h3>
-          <h3>Cena: {newItem.Bluza3.price} zł</h3>
-          <Button
-            variant="outlined"
-            onClick={addToCart}
-            style={{ borderColor: "#af24ff", color: "#af24ff" }}
-          >
-            Dodaj do Koszyka
-          </Button>
-        </Grid>
-      </Grid>
-    </div>
-  );
+				<Grid
+					item
+					style={{
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center',
+						marginTop: 75,
+						backgroundColor: '#cfd0d1',
+						boxShadow: ' 4px 3px 3px 8px rgba(19, 19, 19, 1)',
+						borderRadius: '25px',
+						height: 'fit-content',
+						padding: '15px',
+					}}
+				>
+					<img src={newItem.Bluza2.image} width="250px" height="250px" />
+					<h3>{newItem.Bluza2.name}</h3>
+					<h3>Cena: {newItem.Bluza2.price} zł</h3>
+					<Button
+						variant="outlined"
+						onClick={addToCart}
+						style={{ borderColor: '#af24ff', color: '#af24ff' }}
+					>
+						Dodaj do Koszyka
+					</Button>
+				</Grid>
+				<Grid
+					item
+					style={{
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center',
+						marginTop: 75,
+						backgroundColor: '#cfd0d1',
+						boxShadow: ' 4px 3px 3px 8px rgba(19, 19, 19, 1)',
+						borderRadius: '25px',
+						height: 'fit-content',
+						padding: '15px',
+					}}
+				>
+					<img src={newItem.Bluza3.image} width="250px" height="250px" />
+					<h3>{newItem.Bluza3.name}</h3>
+					<h3>Cena: {newItem.Bluza3.price} zł</h3>
+					<Button
+						variant="outlined"
+						onClick={addToCart}
+						style={{ borderColor: '#af24ff', color: '#af24ff' }}
+					>
+						Dodaj do Koszyka
+					</Button>
+				</Grid>
+			</Grid>
+		</div>
+	);
 };
