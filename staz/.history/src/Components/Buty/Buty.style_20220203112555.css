@@ -1,0 +1,26 @@
+#slider{
+margin-left: 270px;
+width:70%;
+height: 250px;
+}
+#splide01-track{
+margin-left: 5%;
+height: 250px;
+
+}
+.splide__track {
+    margin-left: 15%;
+height: 150px;
+width: 70%;
+}
+.Buty{
+
+background-color: aqua;
+
+}
+.box{
+    background-color: #f5f5f5;
+border-radius: 12px;
+height: 230px;
+width: 40px;
+}

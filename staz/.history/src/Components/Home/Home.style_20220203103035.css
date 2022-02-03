@@ -1,0 +1,24 @@
+#Home{
+height: 73vh;
+background-image: url(https://wallpaper.dog/large/10907455.jpg);
+border-color: #af24ff;
+border-width: 0.6vh;
+border-style: solid;
+border-top:none;
+position: static;
+}
+.slider{
+width:1300px;
+height: 200px;
+margin-left: 22%;
+padding-top: 1%;
+}
+.splide__arrow{
+    margin-left: 5%;
+    margin-right: 25%;
+    
+    }
+    .splide__pagination{
+        margin-right: 20%;
+        
+        }
