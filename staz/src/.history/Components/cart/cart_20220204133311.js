@@ -129,9 +129,9 @@ export const EnhancedTable = () => {
               </TableHead>
               <TableBody>
                 {items ? (
-                  items.map((item, index) => (
+                  items.map(([item, index]) => (
                     <TableRow
-                      key={index}
+                      key={item.name}
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell component="th" scope="row">

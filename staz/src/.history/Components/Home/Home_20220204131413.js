@@ -7,9 +7,9 @@ export const Home = () => {
 	return (
 		<>
 			<div id="Home">
-				<div class="slider"style={{backgroundColor:'#a1a1a1'}}>
+				<div class="slider">
 					<Splide
-					
+					height={'250px'}
 						options={{
 							type: 'loop',
 							autoplay: true,
@@ -23,15 +23,16 @@ export const Home = () => {
 							/>
 						</SplideSlide>
 						<SplideSlide>
-							<img src="https://media.discordapp.net/attachments/633022735567683584/939120619193270352/i-buty-sportowe-nike-jordan-access-ar3762-001-r-43-removebg-preview.png"height={'250px'} alt="2" />
+							<img src="https://i.postimg.cc/ryHVy9T7/2.jpg" alt="2" />
 						</SplideSlide>
 						<SplideSlide>
-							<img src="https://media.discordapp.net/attachments/633022735567683584/939124170904723466/5838_2-removebg-preview.png"height={'250px'} alt="3" />
+							<img src="https://i.postimg.cc/HnFdST3T/3.jpg" alt="3" />
 						</SplideSlide>
 					</Splide>
 				</div>
 				<div className="text">
-					Najlepszy internetowy sklep z ciuhami (9/10 dentystów poleca)
+					Napis sssssss ssssssss ssssssss ssssssss sssssss ssssss sss ssss ssss
+					ssssss ssssssss sssssss ssssssss sssss sssssssss.
 				</div>
 			</div>
 		</>

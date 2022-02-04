@@ -31,7 +31,7 @@ export const Home = () => {
 					</Splide>
 				</div>
 				<div className="text">
-					Najlepszy internetowy sklep z ciuhami (9/10 dentystów poleca)
+					Najlepszy internetowy sklep z ciuhami (poleca 9/10 dentystów)
 				</div>
 			</div>
 		</>
