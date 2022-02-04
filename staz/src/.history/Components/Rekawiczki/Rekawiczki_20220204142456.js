@@ -26,9 +26,10 @@ export const Rekawiczki = () => {
     },
   };
 
-  const addToCart = (item) => {
-    items = [...items, item];
-    localStorage.setItem("itemArray", JSON.stringify(items));
+  const addToCart = () => {
+    var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
+    oldItems.push(newItems);
+    localStorage.setItem("itemArray", JSON.stringify(oldItems));
   };
 
   return (

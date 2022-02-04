@@ -1,28 +1,29 @@
 import { Button, Grid } from "@mui/material";
 import React from "react";
 
-export const Rekawiczki = () => {
+export const Buty = () => {
   let [items] = React.useState(
-    JSON.parse(localStorage.getItem("itemArray") || "[]")
+    JSON.parse(localStorage.getItem("itemsArray") || "[]")
   );
+
   var newItems = {
-    Rekawiczki1: {
-      name: "Rekawiczki1",
+    Buty1: {
+      name: "Buty1",
       image:
-        "https://media.discordapp.net/attachments/633022735567683584/939124860121141319/0000201483152_02_mt-removebg-preview.png",
-      price: "89.99",
+        "https://media.discordapp.net/attachments/633022735567683584/939120619193270352/i-buty-sportowe-nike-jordan-access-ar3762-001-r-43-removebg-preview.png",
+      price: "599.99",
     },
-    Rekawiczki2: {
-      name: "Rekawiczki2",
+    Buty2: {
+      name: "Buty2",
       image:
-        "https://media.discordapp.net/attachments/633022735567683584/939125044385308693/2020_10_14_DESPORTIVO_0045-removebg-preview.png",
-      price: "49.99",
+        "https://media.discordapp.net/attachments/633022735567683584/939120929617870848/pol_il_BUTY-MESKIE-LIFESTYLE-NIKE-AIR-MAX-270-CZARNE-AH8050-002-37595-removebg-preview.png",
+      price: "679.99",
     },
-    Rekawiczki3: {
-      name: "Rekawiczki3",
+    Buty3: {
+      name: "Buty3",
       image:
-        "https://www.vitasport.pl/pol_pl_rekawiczki-ADIDAS-Fieldplayer-CP-CW5640-231101_1.png",
-      price: "39.99",
+        "https://media.discordapp.net/attachments/633022735567683584/939121167896301578/CG6088-removebg-preview.png",
+      price: "279.99",
     },
   };
 
@@ -32,7 +33,7 @@ export const Rekawiczki = () => {
   };
 
   return (
-    <div className="Rekawiczki">
+    <div className="Buty">
       <Grid
         container
         style={{

@@ -1,38 +1,35 @@
 import { Button, Grid } from "@mui/material";
-import React from "react";
 
-export const Rekawiczki = () => {
+export const Maseczki = () => {
   let [items] = React.useState(
     JSON.parse(localStorage.getItem("itemArray") || "[]")
   );
   var newItems = {
-    Rekawiczki1: {
-      name: "Rekawiczki1",
-      image:
-        "https://media.discordapp.net/attachments/633022735567683584/939124860121141319/0000201483152_02_mt-removebg-preview.png",
-      price: "89.99",
+    maseczka1: {
+      name: "maseczka1",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939123207724752956/MASECZKA-ADIDAS-ORIGINALS-FACE-COVERS-HB7851-M-L-removebg-preview.png",
+      price: "19.99",
     },
-    Rekawiczki2: {
-      name: "Rekawiczki2",
-      image:
-        "https://media.discordapp.net/attachments/633022735567683584/939125044385308693/2020_10_14_DESPORTIVO_0045-removebg-preview.png",
+    maseczka2: {
+      name: "maseczka2",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939123519629955082/2-X-NIKE-MASECZKA-WIELOKROTNEGO-UZYTKU-removebg-preview.png",
       price: "49.99",
     },
-    Rekawiczki3: {
-      name: "Rekawiczki3",
-      image:
-        "https://www.vitasport.pl/pol_pl_rekawiczki-ADIDAS-Fieldplayer-CP-CW5640-231101_1.png",
-      price: "39.99",
+    maseczka3: {
+      name: "maseczka3",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939123694276575262/maseczka_bawelniana-removebg-preview.png",
+      price: "0.99",
     },
   };
 
-  const addToCart = (item) => {
-    items = [...items, item];
-    localStorage.setItem("itemArray", JSON.stringify(items));
+  const addToCart = () => {
+    var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
+    oldItems.push(newItems);
+    localStorage.setItem("itemArray", JSON.stringify(oldItems));
   };
 
   return (
-    <div className="Rekawiczki">
+    <div className="Maseczki">
       <Grid
         container
         style={{

@@ -1,38 +1,35 @@
 import { Button, Grid } from "@mui/material";
-import React from "react";
 
-export const Rekawiczki = () => {
+export const Koszulki = () => {
   let [items] = React.useState(
     JSON.parse(localStorage.getItem("itemArray") || "[]")
   );
   var newItems = {
-    Rekawiczki1: {
-      name: "Rekawiczki1",
-      image:
-        "https://media.discordapp.net/attachments/633022735567683584/939124860121141319/0000201483152_02_mt-removebg-preview.png",
-      price: "89.99",
+    Koszulka1: {
+      name: "Koszulka1",
+      image: "https://elanskis.com/media/catalog/product/e/l/elan-polo-shirt-m-pst91819-3d.png",
+      price: "199.99",
     },
-    Rekawiczki2: {
-      name: "Rekawiczki2",
-      image:
-        "https://media.discordapp.net/attachments/633022735567683584/939125044385308693/2020_10_14_DESPORTIVO_0045-removebg-preview.png",
-      price: "49.99",
+    Koszulka2: {
+      name: "Koszulka2",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939122173040287744/17830632_500_A-removebg-preview.png",
+      price: "71.99",
     },
-    Rekawiczki3: {
-      name: "Rekawiczki3",
-      image:
-        "https://www.vitasport.pl/pol_pl_rekawiczki-ADIDAS-Fieldplayer-CP-CW5640-231101_1.png",
-      price: "39.99",
+    Koszulka3: {
+      name: "Koszulka3",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939122336068665415/UNDER-ARMOUR-KOSZULKA-SPORTOWA-MESKA-T-SHIRT-removebg-preview.png",
+      price: "59.99",
     },
   };
 
-  const addToCart = (item) => {
-    items = [...items, item];
-    localStorage.setItem("itemArray", JSON.stringify(items));
+  const addToCart = () => {
+    var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
+    oldItems.push(newItems);
+    localStorage.setItem("itemArray", JSON.stringify(oldItems));
   };
 
   return (
-    <div className="Rekawiczki">
+    <div className="Koszulki">
       <Grid
         container
         style={{

@@ -1,38 +1,37 @@
 import { Button, Grid } from "@mui/material";
 import React from "react";
 
-export const Rekawiczki = () => {
+
+export const Czapki = () => {
   let [items] = React.useState(
     JSON.parse(localStorage.getItem("itemArray") || "[]")
   );
   var newItems = {
-    Rekawiczki1: {
-      name: "Rekawiczki1",
-      image:
-        "https://media.discordapp.net/attachments/633022735567683584/939124860121141319/0000201483152_02_mt-removebg-preview.png",
-      price: "89.99",
-    },
-    Rekawiczki2: {
-      name: "Rekawiczki2",
-      image:
-        "https://media.discordapp.net/attachments/633022735567683584/939125044385308693/2020_10_14_DESPORTIVO_0045-removebg-preview.png",
+    Czapka1: {
+      name: "Czapka1",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939121444519051294/i-under-armour-czapka-z-daszkiem-blizting-ii-camo-black-1273197-002-removebg-preview.png",
       price: "49.99",
     },
-    Rekawiczki3: {
-      name: "Rekawiczki3",
-      image:
-        "https://www.vitasport.pl/pol_pl_rekawiczki-ADIDAS-Fieldplayer-CP-CW5640-231101_1.png",
-      price: "39.99",
+    Czapka2: {
+      name: "Czapka2",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939121686903656498/CZAPKA-NIKE-MESKA-Z-DASZKIEM-943092-010-R-ONESIZE-removebg-preview.png",
+      price: "68.99",
+    },
+    Czapka3: {
+      name: "Czapka3",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939121889266253835/czapka-z-daszkiem-adidas-bejsbolowka-meska-damska-removebg-preview.png",
+      price: "59.99",
     },
   };
 
-  const addToCart = (item) => {
-    items = [...items, item];
-    localStorage.setItem("itemArray", JSON.stringify(items));
+  const addToCart = () => {
+    var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
+    oldItems.push(newItems);
+    localStorage.setItem("itemArray", JSON.stringify(oldItems));
   };
 
   return (
-    <div className="Rekawiczki">
+    <div className="Czapki">
       <Grid
         container
         style={{
@@ -42,7 +41,7 @@ export const Rekawiczki = () => {
           height: "73.5vh",
         }}
       >
-        {Object.values(newItems).map((newItem) => (
+         {Object.values(newItems).map((newItem) => (
           <Grid
             item
             style={{

@@ -1,38 +1,36 @@
 import { Button, Grid } from "@mui/material";
 import React from "react";
 
-export const Rekawiczki = () => {
+export const Spodnie = () => {
   let [items] = React.useState(
     JSON.parse(localStorage.getItem("itemArray") || "[]")
   );
   var newItems = {
-    Rekawiczki1: {
-      name: "Rekawiczki1",
-      image:
-        "https://media.discordapp.net/attachments/633022735567683584/939124860121141319/0000201483152_02_mt-removebg-preview.png",
-      price: "89.99",
+    Kurtka1: {
+      name: "Spodnie1",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939125274350612521/spodnie-pilkarskie-dresowe-dla-dzieci-adidas-squadra-2021-removebg-preview.png",
+      price: "119.99",
     },
-    Rekawiczki2: {
-      name: "Rekawiczki2",
-      image:
-        "https://media.discordapp.net/attachments/633022735567683584/939125044385308693/2020_10_14_DESPORTIVO_0045-removebg-preview.png",
-      price: "49.99",
+    Kurtka2: {
+      name: "Spodnie2",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939125423365836830/SPODNIE-DRESOWE-MESKIE-4F-SPMD301-NOSD4-removebg-preview.png",
+      price: "95.99",
     },
-    Rekawiczki3: {
-      name: "Rekawiczki3",
-      image:
-        "https://www.vitasport.pl/pol_pl_rekawiczki-ADIDAS-Fieldplayer-CP-CW5640-231101_1.png",
-      price: "39.99",
+    Kurtka3: {
+      name: "Spodnie3",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939125564973912104/spodnie-under-armour-sto_23968-removebg-preview.png",
+      price: "299.99",
     },
   };
 
-  const addToCart = (item) => {
-    items = [...items, item];
-    localStorage.setItem("itemArray", JSON.stringify(items));
+  const addToCart = () => {
+    var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
+    oldItems.push(newItems);
+    localStorage.setItem("itemArray", JSON.stringify(oldItems));
   };
 
   return (
-    <div className="Rekawiczki">
+    <div className="Kurtki">
       <Grid
         container
         style={{
@@ -42,7 +40,7 @@ export const Rekawiczki = () => {
           height: "73.5vh",
         }}
       >
-        {Object.values(newItems).map((newItem) => (
+         {Object.values(newItems).map((newItem) => (
           <Grid
             item
             style={{

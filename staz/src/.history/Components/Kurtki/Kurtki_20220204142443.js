@@ -1,38 +1,36 @@
 import { Button, Grid } from "@mui/material";
 import React from "react";
 
-export const Rekawiczki = () => {
+export const Kurtki = () => {
   let [items] = React.useState(
     JSON.parse(localStorage.getItem("itemArray") || "[]")
   );
   var newItems = {
-    Rekawiczki1: {
-      name: "Rekawiczki1",
-      image:
-        "https://media.discordapp.net/attachments/633022735567683584/939124860121141319/0000201483152_02_mt-removebg-preview.png",
-      price: "89.99",
+    Kurtka1: {
+      name: "Kurtka1",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939122597273169950/5201015500LightQuiltedJacketGrangerRoyalBlue01small_5000x-removebg-preview.png",
+      price: "309.99",
     },
-    Rekawiczki2: {
-      name: "Rekawiczki2",
-      image:
-        "https://media.discordapp.net/attachments/633022735567683584/939125044385308693/2020_10_14_DESPORTIVO_0045-removebg-preview.png",
-      price: "49.99",
+    Kurtka2: {
+      name: "Kurtka2",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939122770627948564/pol_pl_kurtka-NIKE-NSW-WINDRUNNER-AR2191-010-257350_1-removebg-preview.png",
+      price: "259.99",
     },
-    Rekawiczki3: {
-      name: "Rekawiczki3",
-      image:
-        "https://www.vitasport.pl/pol_pl_rekawiczki-ADIDAS-Fieldplayer-CP-CW5640-231101_1.png",
-      price: "39.99",
+    Kurtka3: {
+      name: "Kurtka3",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939122917986422854/520c61204ffc833e060c66f17d70-removebg-preview.png",
+      price: "431.99",
     },
   };
 
-  const addToCart = (item) => {
-    items = [...items, item];
-    localStorage.setItem("itemArray", JSON.stringify(items));
+  const addToCart = () => {
+    var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
+    oldItems.push(newItems);
+    localStorage.setItem("itemArray", JSON.stringify(oldItems));
   };
 
   return (
-    <div className="Rekawiczki">
+    <div className="Kurtki">
       <Grid
         container
         style={{
