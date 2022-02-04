@@ -1,40 +1,25 @@
 .Navbar {
-  box-sizing: border-box;
-  background-color: #252222;
-  border-color: #af24ff;
-  border-width: 0.6vh;
-  border-style: solid;
-  justify-content: space-evenly;
+	box-sizing: border-box;
+	background-color: #252222;
+	border-color: #af24ff;
+	border-width: 0.6vh;
+	border-style: solid;
+	justify-content: space-evenly;
 }
 
-
-.list{
-
-background-color: /*#af24ff*/ #252222;
-color: white;
-text-align: center;
-
+.list {
+	background-color: #252222;
+	color: white;
+	text-align: center;
 }
-
-/* ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-decoration: none;
-  list-style-type: none;
-  color: #af24ff;
-  text-transform: uppercase;
-  margin: 0;
-  height: 40px;
-} */
 
 a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 li:hover {
-  color: aqua;
-  cursor: pointer;
+	color: aqua;
+	cursor: pointer;
 }
