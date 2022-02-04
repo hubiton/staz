@@ -56,7 +56,12 @@ export const Buty = () => {
 						height: '65%',
 					}}
 				>
-					<img src={newItem.Buty1.image} width="250px" height="250px" />
+					<img
+						src={newItem.Buty1.image}
+						width="250px"
+						height="250px"
+						alt="buty"
+					/>
 					<h3>{newItem.Buty1.name}</h3>
 					<h3>Cena: {newItem.Buty1.price} zł</h3>
 					<Button
