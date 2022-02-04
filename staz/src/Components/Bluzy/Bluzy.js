@@ -24,7 +24,6 @@ export const Bluzy = () => {
 	};
 
 	const addToCart = (item) => {
-		// var oldItems = JSON.parse(localStorage.getItem('itemsArray')) || [];
 		items = [...items, item];
 		localStorage.setItem('itemArray', JSON.stringify(items));
 	};
