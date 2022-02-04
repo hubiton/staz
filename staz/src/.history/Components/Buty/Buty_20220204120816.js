@@ -54,7 +54,7 @@ export const Buty = () => {
               padding: "15px",
             }}
           >
-            <img src={newItem.image} width="250px" height="250px" />
+            <img src={newItem.image} width="250px" height="250px" alt="bluza" />
             <h3>{newItem.name}</h3>
             <h3>Cena: {newItem.price} zł</h3>
             <Button

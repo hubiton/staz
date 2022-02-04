@@ -1,35 +1,32 @@
 import { Button, Grid } from "@mui/material";
 
-export const Buty = () => {
+export const Kurtki = () => {
   var newItems = {
-    Buty1: {
-      name: "Buty1",
-      image:
-        "https://o.remove.bg/downloads/87d6ebdb-6d6c-4117-a558-c0b7a7fe9356/BUTY-SPORTOWE-NIKE-JORDAN-ACCESS-AR3762-006-R-40-removebg-preview.png",
-      price: "599.99",
+    Kurtka1: {
+      name: "Kurtka1",
+      image: "https://o.remove.bg/downloads/127e925e-9b2d-4fa9-bbb7-36c2641a6795/5201015500LightQuiltedJacketGrangerRoyalBlue01small_800x-removebg-preview.png",
+      price: "309.99",
     },
-    Buty2: {
-      name: "Buty2",
-      image:
-        "https://o.remove.bg/downloads/7585b6b7-65f3-4ab5-bfee-cea05e579186/pol_il_BUTY-MESKIE-LIFESTYLE-NIKE-AIR-MAX-270-CZARNE-AH8050-002-37595-removebg-preview.png",
-      price: "679.99",
+    Kurtka2: {
+      name: "Kurtka2",
+      image: "https://o.remove.bg/downloads/56fecc04-2495-4113-8653-715bfdf523cf/pol_pl_kurtka-NIKE-NSW-WINDRUNNER-AR2191-010-257350_1-removebg-preview.png",
+      price: "259.99",
     },
-    Buty3: {
-      name: "Buty3",
-      image:
-        "https://o.remove.bg/downloads/b3f3a697-30d7-4997-a7ff-c8033dd84f0b/buty-meskie-adidas-orginals-deerupt-runner-czarne-biale_2-removebg-preview.png",
-      price: "279.99",
+    Kurtka3: {
+      name: "Kurtka3",
+      image: "https://o.remove.bg/downloads/dcc6ed8b-c020-4775-8bbc-67dd508b8184/520c61204ffc833e060c66f17d70-removebg-preview.png",
+      price: "431.99",
     },
   };
 
-  const addToCart = (item) => {
+  const addToCart = () => {
     var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
-    oldItems.push(item);
+    oldItems.push(newItem);
     localStorage.setItem("itemArray", JSON.stringify(oldItems));
   };
 
   return (
-    <div className="Buty">
+    <div className="Kurtki">
       <Grid
         container
         style={{

@@ -1,35 +1,32 @@
 import { Button, Grid } from "@mui/material";
 
-export const Buty = () => {
+export const Czapki = () => {
   var newItems = {
-    Buty1: {
-      name: "Buty1",
-      image:
-        "https://o.remove.bg/downloads/87d6ebdb-6d6c-4117-a558-c0b7a7fe9356/BUTY-SPORTOWE-NIKE-JORDAN-ACCESS-AR3762-006-R-40-removebg-preview.png",
-      price: "599.99",
+    Czapka1: {
+      name: "Czapka1",
+      image: "https://o.remove.bg/downloads/4d967951-7d51-41e4-9b6c-b06cf7f338e2/i-under-armour-czapka-z-daszkiem-blizting-ii-camo-black-1273197-002-removebg-preview.png",
+      price: "49.99",
     },
-    Buty2: {
-      name: "Buty2",
-      image:
-        "https://o.remove.bg/downloads/7585b6b7-65f3-4ab5-bfee-cea05e579186/pol_il_BUTY-MESKIE-LIFESTYLE-NIKE-AIR-MAX-270-CZARNE-AH8050-002-37595-removebg-preview.png",
-      price: "679.99",
+    Czapka2: {
+      name: "Czapka2",
+      image: "https://o.remove.bg/downloads/2a09a1a0-244a-4064-9bbc-5036531dda23/CZAPKA-NIKE-MESKA-Z-DASZKIEM-943092-010-R-ONESIZE-removebg-preview.png",
+      price: "68.99",
     },
-    Buty3: {
-      name: "Buty3",
-      image:
-        "https://o.remove.bg/downloads/b3f3a697-30d7-4997-a7ff-c8033dd84f0b/buty-meskie-adidas-orginals-deerupt-runner-czarne-biale_2-removebg-preview.png",
-      price: "279.99",
+    Czapka3: {
+      name: "Czapka3",
+      image: "https://o.remove.bg/downloads/11eb2ead-a9e3-4647-b884-93726b553db3/czapka-z-daszkiem-adidas-bejsbolowka-meska-damska-removebg-preview.png",
+      price: "59.99",
     },
   };
 
-  const addToCart = (item) => {
+  const addToCart = () => {
     var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
-    oldItems.push(item);
+    oldItems.push(newItem);
     localStorage.setItem("itemArray", JSON.stringify(oldItems));
   };
 
   return (
-    <div className="Buty">
+    <div className="Czapki">
       <Grid
         container
         style={{
@@ -39,7 +36,7 @@ export const Buty = () => {
           height: "73.5vh",
         }}
       >
-        {Object.values(newItems).map((newItem) => (
+         {Object.values(newItems).map((newItem) => (
           <Grid
             item
             style={{
