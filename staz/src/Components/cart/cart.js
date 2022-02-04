@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -61,6 +61,11 @@ const style = {
 export const EnhancedTable = () => {
 	const items = JSON.parse(localStorage.getItem('itemArray'));
 
+	let suma = 0;
+	items?.map((item) => {
+		suma = suma + Number(item.price);
+	});
+
 	const [open, setOpen] = React.useState(false);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
@@ -75,7 +80,7 @@ export const EnhancedTable = () => {
 		setTimeout(() => {
 			setOpen(false);
 			setAnimation(false);
-		}, 3500);
+		}, 30500);
 	};
 
 	const handleClose1 = (event, reason) => {
@@ -199,7 +204,7 @@ export const EnhancedTable = () => {
 							{!animation ? (
 								<Grid>
 									<h2 id="unstyled-modal-title">
-										<Typography>Suma:</Typography>
+										<Typography>Suma: {suma.toFixed(2)}</Typography>
 									</h2>
 									<Button
 										variant="outlined"
@@ -209,17 +214,27 @@ export const EnhancedTable = () => {
 											color: '#af24ff',
 										}}
 									>
-										Zkup produkty
+										Kup produkty
 									</Button>
 								</Grid>
 							) : null}
 							{animation ? (
-								<img
-									src="https://i.postimg.cc/Z5Jw9dZS/output-onlinegiftools-1.gif"
-									width="350px"
-									height="250px"
-									alt="animation"
-								/>
+								<Grid
+									style={{
+										display: 'flex',
+										flexDirection: 'column',
+										justifyContent: 'center',
+										alignItems: 'center',
+									}}
+								>
+									<img
+										src="https://i.postimg.cc/Z5Jw9dZS/output-onlinegiftools-1.gif"
+										width="350px"
+										height="250px"
+										alt="animation"
+									/>
+									<Typography>Dziekujemy!</Typography>
+								</Grid>
 							) : null}
 						</Box>
 					</StyledModal>
