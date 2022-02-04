@@ -8,17 +8,17 @@ export const Bluzy = () => {
 	const newItems = {
 		Bluza1: {
 			name: 'Bluza1',
-			image: 'https://media.discordapp.net/attachments/633022735567683584/939119225388273694/bluza1.png',
+			image: 'https://i.ibb.co/2dNsPmX/bluza1.webp',
 			price: '74.99',
 		},
 		Bluza2: {
 			name: 'Bluza2',
-			image: 'https://media.discordapp.net/attachments/633022735567683584/939119228466888734/bluza3.png',
+			image:https://media.discordapp.net/attachments/633022735567683584/939119228466888734/bluza3.png',
 			price: '74.99',
 		},
 		Bluza3: {
 			name: 'Bluza3',
-			image: 'https://media.discordapp.net/attachments/633022735567683584/939119234498326558/bluza2.png',
+			image: 'https://i.ibb.co/YTQS1D8/bluza2.webp',
 			price: '99.99',
 		},
 	};

@@ -14,7 +14,7 @@ export const Spodnie = () => {
     },
     Kurtka3: {
       name: "Spodnie3",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125564973912104/spodnie-under-armour-sto_23968-removebg-preview.png",
+      image: "https://o.remove.bg/downloads/79e57d9d-5e5c-4cfe-bc5b-f107be238032/spodnie-under-armour-sto_23968-removebg-preview.png",
       price: "299.99",
     },
   };

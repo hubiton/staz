@@ -1,21 +1,21 @@
 import { Button, Grid } from "@mui/material";
 
-export const Spodnie = () => {
+export const Koszulki = () => {
   var newItems = {
-    Kurtka1: {
-      name: "Spodnie1",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125274350612521/spodnie-pilkarskie-dresowe-dla-dzieci-adidas-squadra-2021-removebg-preview.png",
-      price: "119.99",
+    Koszulka1: {
+      name: "Koszulka1",
+      image: "https://elanskis.com/media/catalog/product/e/l/elan-polo-shirt-m-pst91819-3d.png",
+      price: "199.99",
     },
-    Kurtka2: {
-      name: "Spodnie2",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125423365836830/SPODNIE-DRESOWE-MESKIE-4F-SPMD301-NOSD4-removebg-preview.png",
-      price: "95.99",
+    Koszulka2: {
+      name: "Koszulka2",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939122173040287744/17830632_500_A-removebg-preview.png",
+      price: "71.99",
     },
-    Kurtka3: {
-      name: "Spodnie3",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125564973912104/spodnie-under-armour-sto_23968-removebg-preview.png",
-      price: "299.99",
+    Koszulka3: {
+      name: "Koszulka3",
+      image: "https://o.remove.bg/downloads/5555471c-7121-4e34-9152-94f78056cea5/UNDER-ARMOUR-KOSZULKA-SPORTOWA-MESKA-T-SHIRT-removebg-preview.png",
+      price: "59.99",
     },
   };
 
@@ -26,7 +26,7 @@ export const Spodnie = () => {
   };
 
   return (
-    <div className="Kurtki">
+    <div className="Koszulki">
       <Grid
         container
         style={{
@@ -36,7 +36,7 @@ export const Spodnie = () => {
           height: "73.5vh",
         }}
       >
-         {Object.values(newItems).map((newItem) => (
+        {Object.values(newItems).map((newItem) => (
           <Grid
             item
             style={{

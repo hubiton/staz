@@ -1,21 +1,21 @@
 import { Button, Grid } from "@mui/material";
 
-export const Spodnie = () => {
+export const Czapki = () => {
   var newItems = {
-    Kurtka1: {
-      name: "Spodnie1",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125274350612521/spodnie-pilkarskie-dresowe-dla-dzieci-adidas-squadra-2021-removebg-preview.png",
-      price: "119.99",
+    Czapka1: {
+      name: "Czapka1",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939121444519051294/i-under-armour-czapka-z-daszkiem-blizting-ii-camo-black-1273197-002-removebg-preview.png",
+      price: "49.99",
     },
-    Kurtka2: {
-      name: "Spodnie2",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125423365836830/SPODNIE-DRESOWE-MESKIE-4F-SPMD301-NOSD4-removebg-preview.png",
-      price: "95.99",
+    Czapka2: {
+      name: "Czapka2",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939121686903656498/CZAPKA-NIKE-MESKA-Z-DASZKIEM-943092-010-R-ONESIZE-removebg-preview.png",
+      price: "68.99",
     },
-    Kurtka3: {
-      name: "Spodnie3",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125564973912104/spodnie-under-armour-sto_23968-removebg-preview.png",
-      price: "299.99",
+    Czapka3: {
+      name: "Czapka3",
+      image: "https://o.remove.bg/downloads/11eb2ead-a9e3-4647-b884-93726b553db3/czapka-z-daszkiem-adidas-bejsbolowka-meska-damska-removebg-preview.png",
+      price: "59.99",
     },
   };
 
@@ -26,7 +26,7 @@ export const Spodnie = () => {
   };
 
   return (
-    <div className="Kurtki">
+    <div className="Czapki">
       <Grid
         container
         style={{
