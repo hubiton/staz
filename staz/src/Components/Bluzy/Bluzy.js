@@ -22,6 +22,7 @@ export const Bluzy = () => {
 			price: '99.99',
 		},
 	};
+	
 
 	const addToCart = (item) => {
 		items = [...items, item];
