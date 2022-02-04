@@ -1,21 +1,21 @@
 import { Button, Grid } from "@mui/material";
 
-export const Spodnie = () => {
+export const Kurtki = () => {
   var newItems = {
     Kurtka1: {
-      name: "Spodnie1",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125274350612521/spodnie-pilkarskie-dresowe-dla-dzieci-adidas-squadra-2021-removebg-preview.png",
-      price: "119.99",
+      name: "Kurtka1",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939122597273169950/5201015500LightQuiltedJacketGrangerRoyalBlue01small_5000x-removebg-preview.png",
+      price: "309.99",
     },
     Kurtka2: {
-      name: "Spodnie2",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125423365836830/SPODNIE-DRESOWE-MESKIE-4F-SPMD301-NOSD4-removebg-preview.png",
-      price: "95.99",
+      name: "Kurtka2",
+      image: "https://o.remove.bg/downloads/56fecc04-2495-4113-8653-715bfdf523cf/pol_pl_kurtka-NIKE-NSW-WINDRUNNER-AR2191-010-257350_1-removebg-preview.png",
+      price: "259.99",
     },
     Kurtka3: {
-      name: "Spodnie3",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125564973912104/spodnie-under-armour-sto_23968-removebg-preview.png",
-      price: "299.99",
+      name: "Kurtka3",
+      image: "https://o.remove.bg/downloads/dcc6ed8b-c020-4775-8bbc-67dd508b8184/520c61204ffc833e060c66f17d70-removebg-preview.png",
+      price: "431.99",
     },
   };
 
@@ -36,7 +36,7 @@ export const Spodnie = () => {
           height: "73.5vh",
         }}
       >
-         {Object.values(newItems).map((newItem) => (
+        {Object.values(newItems).map((newItem) => (
           <Grid
             item
             style={{

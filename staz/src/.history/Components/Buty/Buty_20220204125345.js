@@ -1,32 +1,35 @@
 import { Button, Grid } from "@mui/material";
 
-export const Spodnie = () => {
+export const Buty = () => {
   var newItems = {
-    Kurtka1: {
-      name: "Spodnie1",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125274350612521/spodnie-pilkarskie-dresowe-dla-dzieci-adidas-squadra-2021-removebg-preview.png",
-      price: "119.99",
+    Buty1: {
+      name: "Buty1",
+      image:
+        "https://o.remove.bg/downloads/87d6ebdb-6d6c-4117-a558-c0b7a7fe9356/BUTY-SPORTOWE-NIKE-JORDAN-ACCESS-AR3762-006-R-40-removebg-preview.png",
+      price: "599.99",
     },
-    Kurtka2: {
-      name: "Spodnie2",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125423365836830/SPODNIE-DRESOWE-MESKIE-4F-SPMD301-NOSD4-removebg-preview.png",
-      price: "95.99",
+    Buty2: {
+      name: "Buty2",
+      image:
+        "https://o.remove.bg/downloads/7585b6b7-65f3-4ab5-bfee-cea05e579186/pol_il_BUTY-MESKIE-LIFESTYLE-NIKE-AIR-MAX-270-CZARNE-AH8050-002-37595-removebg-preview.png",
+      price: "679.99",
     },
-    Kurtka3: {
-      name: "Spodnie3",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125564973912104/spodnie-under-armour-sto_23968-removebg-preview.png",
-      price: "299.99",
+    Buty3: {
+      name: "Buty3",
+      image:
+        "https://o.remove.bg/downloads/b3f3a697-30d7-4997-a7ff-c8033dd84f0b/buty-meskie-adidas-orginals-deerupt-runner-czarne-biale_2-removebg-preview.png",
+      price: "279.99",
     },
   };
 
-  const addToCart = () => {
+  const addToCart = (item) => {
     var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
-    oldItems.push(newItems);
+    oldItems.push(item);
     localStorage.setItem("itemArray", JSON.stringify(oldItems));
   };
 
   return (
-    <div className="Kurtki">
+    <div className="Buty">
       <Grid
         container
         style={{
@@ -36,7 +39,7 @@ export const Spodnie = () => {
           height: "73.5vh",
         }}
       >
-         {Object.values(newItems).map((newItem) => (
+        {Object.values(newItems).map((newItem) => (
           <Grid
             item
             style={{
@@ -51,7 +54,7 @@ export const Spodnie = () => {
               padding: "15px",
             }}
           >
-            <img src={newItem.image} width="250px" height="250px" />
+            <img src={newItem.image} width="250px" height="250px"" />
             <h3>{newItem.name}</h3>
             <h3>Cena: {newItem.price} zł</h3>
             <Button

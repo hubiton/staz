@@ -3,18 +3,18 @@ import { Button, Grid } from "@mui/material";
 export const Spodnie = () => {
   var newItems = {
     Kurtka1: {
-      name: "Spodnie1",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125274350612521/spodnie-pilkarskie-dresowe-dla-dzieci-adidas-squadra-2021-removebg-preview.png",
+      name: "Kurtka1",
+      image: "https://o.remove.bg/downloads/43c00862-a50c-4204-b7f1-5c833144ce35/spodnie-pilkarskie-dresowe-dla-dzieci-adidas-squadra-2021-removebg-preview.png",
       price: "119.99",
     },
     Kurtka2: {
-      name: "Spodnie2",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125423365836830/SPODNIE-DRESOWE-MESKIE-4F-SPMD301-NOSD4-removebg-preview.png",
+      name: "Kurtka2",
+      image: "https://o.remove.bg/downloads/14ed78bf-af7d-4879-b14c-557e4079715e/SPODNIE-DRESOWE-MESKIE-4F-SPMD301-NOSD4-removebg-preview.png",
       price: "95.99",
     },
     Kurtka3: {
-      name: "Spodnie3",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125564973912104/spodnie-under-armour-sto_23968-removebg-preview.png",
+      name: "Kurtka3",
+      image: "https://o.remove.bg/downloads/79e57d9d-5e5c-4cfe-bc5b-f107be238032/spodnie-under-armour-sto_23968-removebg-preview.png",
       price: "299.99",
     },
   };

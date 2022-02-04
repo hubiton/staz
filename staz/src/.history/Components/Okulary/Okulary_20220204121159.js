@@ -1,32 +1,32 @@
 import { Button, Grid } from "@mui/material";
 
-export const Spodnie = () => {
-  var newItems = {
-    Kurtka1: {
-      name: "Spodnie1",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125274350612521/spodnie-pilkarskie-dresowe-dla-dzieci-adidas-squadra-2021-removebg-preview.png",
-      price: "119.99",
+export const Okulary = () => {
+  var newItem = {
+    Okulary1: {
+      name: "Okulary1",
+      image: "https://o.remove.bg/downloads/d8bbe3c0-d0c6-4f92-bf2c-d045b6452ca0/12c393815e714499a724456a8a28468a-removebg-preview.png",
+      price: "79.99",
     },
-    Kurtka2: {
-      name: "Spodnie2",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125423365836830/SPODNIE-DRESOWE-MESKIE-4F-SPMD301-NOSD4-removebg-preview.png",
-      price: "95.99",
+    Okulary2: {
+      name: "Okulary2",
+      image: "https://o.remove.bg/downloads/a1c9db4f-d465-437e-8748-d01b375850c8/5838_2-removebg-preview.png",
+      price: "568.99",
     },
-    Kurtka3: {
-      name: "Spodnie3",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125564973912104/spodnie-under-armour-sto_23968-removebg-preview.png",
-      price: "299.99",
+    Okulary3: {
+      name: "Okulary3",
+      image: "https://o.remove.bg/downloads/f8184d1b-7ece-49eb-8c8c-8d5d7a236b4d/pol_pl_okulary-przeciwsloneczne-AVIATOR-BLACK-cieniowane-200904_4-removebg-preview.png",
+      price: "29.99",
     },
   };
 
   const addToCart = () => {
     var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
-    oldItems.push(newItems);
+    oldItems.push(newItem);
     localStorage.setItem("itemArray", JSON.stringify(oldItems));
   };
 
   return (
-    <div className="Kurtki">
+    <div className="Okulary">
       <Grid
         container
         style={{
@@ -36,7 +36,7 @@ export const Spodnie = () => {
           height: "73.5vh",
         }}
       >
-         {Object.values(newItems).map((newItem) => (
+        {Object.values(newItems).map((newItem) => (
           <Grid
             item
             style={{

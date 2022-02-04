@@ -1,21 +1,24 @@
 import { Button, Grid } from "@mui/material";
 
-export const Spodnie = () => {
+export const Rekawiczki = () => {
   var newItems = {
-    Kurtka1: {
-      name: "Spodnie1",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125274350612521/spodnie-pilkarskie-dresowe-dla-dzieci-adidas-squadra-2021-removebg-preview.png",
-      price: "119.99",
+    Rekawiczki1: {
+      name: "Rekawiczki1",
+      image:
+        "https://o.remove.bg/downloads/8b778cc1-d541-4356-9285-d32e31e35dad/0000201483152_02_mt-removebg-preview.png",
+      price: "89.99",
     },
-    Kurtka2: {
-      name: "Spodnie2",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125423365836830/SPODNIE-DRESOWE-MESKIE-4F-SPMD301-NOSD4-removebg-preview.png",
-      price: "95.99",
+    Rekawiczki2: {
+      name: "Rekawiczki2",
+      image:
+        "https://o.remove.bg/downloads/15e6c49b-991a-4d75-b59e-80ec61d54deb/2020_10_14_DESPORTIVO_0045-removebg-preview.png",
+      price: "49.99",
     },
-    Kurtka3: {
-      name: "Spodnie3",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125564973912104/spodnie-under-armour-sto_23968-removebg-preview.png",
-      price: "299.99",
+    Rekawiczki3: {
+      name: "Rekawiczki3",
+      image:
+        "https://www.vitasport.pl/pol_pl_rekawiczki-ADIDAS-Fieldplayer-CP-CW5640-231101_1.png",
+      price: "39.99",
     },
   };
 
@@ -26,7 +29,7 @@ export const Spodnie = () => {
   };
 
   return (
-    <div className="Kurtki">
+    <div className="Rekawiczki">
       <Grid
         container
         style={{
@@ -36,7 +39,7 @@ export const Spodnie = () => {
           height: "73.5vh",
         }}
       >
-         {Object.values(newItems).map((newItem) => (
+        {Object.values(newItems).map((newItem) => (
           <Grid
             item
             style={{

@@ -18,13 +18,13 @@ export const Bluzy = () => {
 		},
 		Bluza3: {
 			name: 'Bluza3',
-			image: 'https://media.discordapp.net/attachments/633022735567683584/939119234498326558/bluza2.png',
+			image: 'https://i.ibb.co/YTQS1D8/bluza2.webp',
 			price: '99.99',
 		},
 	};
-	
 
 	const addToCart = (item) => {
+		// var oldItems = JSON.parse(localStorage.getItem('itemsArray')) || [];
 		items = [...items, item];
 		localStorage.setItem('itemArray', JSON.stringify(items));
 	};

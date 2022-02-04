@@ -9,12 +9,12 @@ export const Spodnie = () => {
     },
     Kurtka2: {
       name: "Spodnie2",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125423365836830/SPODNIE-DRESOWE-MESKIE-4F-SPMD301-NOSD4-removebg-preview.png",
+      image: "https://o.remove.bg/downloads/14ed78bf-af7d-4879-b14c-557e4079715e/SPODNIE-DRESOWE-MESKIE-4F-SPMD301-NOSD4-removebg-preview.png",
       price: "95.99",
     },
     Kurtka3: {
       name: "Spodnie3",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125564973912104/spodnie-under-armour-sto_23968-removebg-preview.png",
+      image: "https://o.remove.bg/downloads/79e57d9d-5e5c-4cfe-bc5b-f107be238032/spodnie-under-armour-sto_23968-removebg-preview.png",
       price: "299.99",
     },
   };

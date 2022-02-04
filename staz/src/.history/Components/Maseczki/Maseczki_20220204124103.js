@@ -1,21 +1,21 @@
 import { Button, Grid } from "@mui/material";
 
-export const Spodnie = () => {
+export const Maseczki = () => {
   var newItems = {
-    Kurtka1: {
-      name: "Spodnie1",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125274350612521/spodnie-pilkarskie-dresowe-dla-dzieci-adidas-squadra-2021-removebg-preview.png",
-      price: "119.99",
+    maseczka1: {
+      name: "maseczka1",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939123207724752956/MASECZKA-ADIDAS-ORIGINALS-FACE-COVERS-HB7851-M-L-removebg-preview.png",
+      price: "19.99",
     },
-    Kurtka2: {
-      name: "Spodnie2",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125423365836830/SPODNIE-DRESOWE-MESKIE-4F-SPMD301-NOSD4-removebg-preview.png",
-      price: "95.99",
+    maseczka2: {
+      name: "maseczka2",
+      image: "https://o.remove.bg/downloads/acab36f4-3a2d-4bbf-a948-c10bff125ca9/2-X-NIKE-MASECZKA-WIELOKROTNEGO-UZYTKU-removebg-preview.png",
+      price: "49.99",
     },
-    Kurtka3: {
-      name: "Spodnie3",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125564973912104/spodnie-under-armour-sto_23968-removebg-preview.png",
-      price: "299.99",
+    maseczka3: {
+      name: "maseczka3",
+      image: "https://o.remove.bg/downloads/b1b54b62-0292-4c9b-b4d4-b1a557800e30/maseczka_bawelniana-removebg-preview.png",
+      price: "0.99",
     },
   };
 
@@ -26,7 +26,7 @@ export const Spodnie = () => {
   };
 
   return (
-    <div className="Kurtki">
+    <div className="Maseczki">
       <Grid
         container
         style={{
@@ -36,7 +36,7 @@ export const Spodnie = () => {
           height: "73.5vh",
         }}
       >
-         {Object.values(newItems).map((newItem) => (
+        {Object.values(newItems).map((newItem) => (
           <Grid
             item
             style={{

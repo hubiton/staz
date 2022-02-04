@@ -1,21 +1,21 @@
 import { Button, Grid } from "@mui/material";
 
-export const Spodnie = () => {
+export const Okulary = () => {
   var newItems = {
-    Kurtka1: {
-      name: "Spodnie1",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125274350612521/spodnie-pilkarskie-dresowe-dla-dzieci-adidas-squadra-2021-removebg-preview.png",
-      price: "119.99",
+    Okulary1: {
+      name: "Okulary1",
+      image: "",
+      price: "79.99",
     },
-    Kurtka2: {
-      name: "Spodnie2",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125423365836830/SPODNIE-DRESOWE-MESKIE-4F-SPMD301-NOSD4-removebg-preview.png",
-      price: "95.99",
+    Okulary2: {
+      name: "Okulary2",
+      image: "https://media.discordapp.net/attachments/633022735567683584/939124170904723466/5838_2-removebg-preview.png",
+      price: "568.99",
     },
-    Kurtka3: {
-      name: "Spodnie3",
-      image: "https://media.discordapp.net/attachments/633022735567683584/939125564973912104/spodnie-under-armour-sto_23968-removebg-preview.png",
-      price: "299.99",
+    Okulary3: {
+      name: "Okulary3",
+      image: "https://o.remove.bg/downloads/45fea121-6070-4b09-afc6-135787cb7722/24-1_54-removebg-preview.png",
+      price: "29.99",
     },
   };
 
@@ -26,7 +26,7 @@ export const Spodnie = () => {
   };
 
   return (
-    <div className="Kurtki">
+    <div className="Okulary">
       <Grid
         container
         style={{
@@ -36,7 +36,7 @@ export const Spodnie = () => {
           height: "73.5vh",
         }}
       >
-         {Object.values(newItems).map((newItem) => (
+        {Object.values(newItems).map((newItem) => (
           <Grid
             item
             style={{
